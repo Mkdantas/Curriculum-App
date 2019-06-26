@@ -1,0 +1,54 @@
+body {
+    margin:0;
+    padding:0;
+    background-color:black;
+}
+
+.Curriculum_page {
+    margin: 10px 0 10px 265px;   
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    width: 800px;
+    height: 1000px;
+}
+
+.full_name h1{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#entirecv {
+    display:none;
+}
+.content-to-hide h1 {
+    color: white;
+    display: flex;
+    font-size: 100px;
+    justify-content: center;
+
+}
+.start-button {
+    margin: 200px 0 0 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    width: 150px;
+    font-weight: bold;
+    color: white;
+    background:black;
+    border-color: blue;
+    outline-color: none;
+    transition: ease-in 0.2s;
+}
+
+.start-button:hover {
+    background:white;
+    color:black;
+    border-color: none;
+}
