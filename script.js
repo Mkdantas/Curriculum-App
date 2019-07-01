@@ -1,7 +1,7 @@
 /**engine of the program */
 function makeitwork(){
 
-    var name = prompt("Qual o seu nome?");
+var name = prompt("Qual o seu nome?");
 var age = prompt("qual a sua idade?");
 var address = prompt("Qual o seu Endereço?");
 var marital = prompt("Qual o seu estado civil?");
