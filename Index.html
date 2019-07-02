@@ -1,61 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!--Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Style CSS-->
+    <!--fonts-->
+     <!--Fonts-->
+     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    
-    <title>Curriculum Maker</title>
-</head>
-<body>
+    <title>Curriculo Maker</title>
+  </head>
+<body class="d-flex justify-content-center">
     <div class="entire-thing">
-    <div id="hide" class="content-to-hide">
+
+        <!--buttons-->
+    <div id="hide" class="content-to-hide container d-flex justify-content-center">
         <h1>Currículo Maker</h1>
-    <button id="btn" class ="start-button" onclick="showcontent()">Clique aqui</button>
+    <button id="btn" class ="start-button container d-flex justify-content-center" onclick="showcontent()">Clique aqui</button>
     </div>
-    <div id="entirecv">
-    <div Class="Curriculum_page" id="Curriculum_page">
-            <div class="informations">
-        <div class="full_name">
-            <h1  id="full_name1">Matheus Wilson Soares Dantas</h1>
-        </div>
-        <div class="age" id="age">
-            23 Anos
-        </div>
-        <div class="address" id="address">
-            Emília Martins Rulo, 175
-        </div>
-        <div class="marital" id="marital">
-            Married
-        </div>
-    </div>
-        <div class="important">
-        
-        <div class="presentation_letter">
-            <h2>Carta de Apresentação</h2>
-            <div id="presentation_letter">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis asperiores debitis <br>
-                    maiores eligendi laborum eveniet, quidem non quos! Eligendi est nam, iure officia<br>
-                     impedit molestias? Doloremque fuga debitis maxime porro?
+
+    <!--start of the CV-->
+    <div id="entirecv" class="container">
+        <div class="row">
+
+
+            <!--Profile SIDE-->
+         <div class="informations col-4 ">
+                <div class="card"><img src="https://www.w3schools.com/howto/img_avatar.png" style="height:100%; width:100%"></div>
+            <div class="full_name">
+                <h1  id="full_name1">Matheus Wilson Soares Dantas</h1>
+            </div>
+            <div class="age" id="age">
+              <span style="text-decoration:underline;"> Idade:</span> <span id="age">23</span> anos
+            </div>
+            <div class="address">
+              <span style="text-decoration:underline;"> Endereço:</span> <span id="address">Emília Martins Rulo, 175</span>
+            </div>
+            <div class="marital" >
+              <span style="text-decoration:underline;">  Estado Civil:</span><span id="marital"> Married</span>
+            </div>
+            <div class="skills">
+              <span style="text-decoration:underline; font-size: 30px;"> Habilidades:</span> <br><br>
+              <span id="skills">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus atque praesentium, voluptates illo placeat accusantium at minus sunt debitis nemo quasi porro. Temporibus debitis distinctio nihil iure? Dignissimos, quasi omnis.</span>
+            </div>
+         </div>
+
+              <!--/Profile SIDE-->
+
+
+
+              <!--Important side-->
+         <div class="important-body col-5">
+            <div class="important">
+            
+            <div class="presentation_letter">
+                <h2 class="font-weight-bold">Carta de Apresentação</h2>
+                <span id="presentation_letter">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis asperiores debitis <br>
+                        maiores eligendi laborum eveniet, quidem non quos! Eligendi est nam, iure officia<br>
+                         impedit molestias? Doloremque fuga debitis maxime porro?
+                </span>
+            </div>
+            </div>
+             <div class="Experiences">
+            <h2 class="font-weight-bold">Experiência profissional</h2>
+            <div id="experiences">
+                <span class ="font-weight-bold" id="company_name1">Grupo Hinode</span> - <span id="office1">Promotor Guia</span><br>
+                <span class ="font-weight-bold" id="company_name2">Grupo Hinode</span> - <span id="office2">Promotor Guia</span><br>
+                <span class ="font-weight-bold" id="company_name3">Grupo Hinode</span> - <span id="office3">Promotor Guia</span><br>
+            </div>
+            </div>
+         <div class="education">
+            <h2 class="font-weight-bold">Formação Acadêmica</h2>
+            <span id="school_name1">Sololearn</span>-<span id="degree1">Javascript</span><br>
+            <span id="school_name2">Sololearn</span>-<span id="degree2">Javascript</span><br>
+            <span id="school_name3">Sololearn</span>-<span id="degree3">Javascript</span><br>
+            
             </div>
         </div>
-        </div>
-         <div class="Experiences">
-        <h2>Experiência profissional</h2>
-        <div id="experiences">
-            <span id="company_name">Grupo Hinode</span> - <span id="office">Promotor Guia</span>
-        </div>
-        </div>
-     <div class="education">
-        <h2>Formação Acadêmica</h2>
-        <span id="school_name">Sololearn</span>-<span id="degree">Javascript</span>
-        </div>
-    </div>
-    </div>
-    </div>
 
-<script src="script.js"></script>
-</body>
+               <!-----------------
+                -/Important side--
+                ------------------>
+        </div>
+        </div>
+        </div>
+ <!-- Optional JavaScript -->
+ <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
