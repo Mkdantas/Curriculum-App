@@ -11,6 +11,8 @@ body {
 
 
 .content-to-hide{
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
     background:rgb(28, 28, 105);
     height: 600px;
@@ -24,10 +26,11 @@ body {
 .content-to-hide h1 {
     color: white;
     display: flex;
+    justify-content: center;
     font-size: 80px;
     justify-content: center;
     font-family: 'Righteous', cursive;
-    margin-top: 60px;
+    margin-top: 60px;   
 
 }
 
@@ -54,7 +57,7 @@ body {
 
 
 #entirecv {
-    display: none;
+    display:none;
     margin: 20px 0 20px 20px;
     width: 1000px;
     height:1200px;
